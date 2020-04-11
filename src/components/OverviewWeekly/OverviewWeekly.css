@@ -1,0 +1,74 @@
+.daily-wrapper{
+    background-color: rgb(247, 247, 247);
+}
+
+.daily-container{
+    display: flex;
+    overflow-x: scroll;
+    padding: 10px 0;
+}
+
+.daily-entry{
+    min-width: 160px;
+    text-align: center;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.06), 0 3px 6px rgba(0,0,0,0.13);
+}
+
+.daily-entry-icon{
+    padding: 12px 0;
+}
+
+.daily-headlines{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.daily-headlines h2{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: rgb(109, 109, 109);
+}
+
+.daily-headlines h3{
+    padding: 3px 0px 0px 15px;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(14, 68, 134);
+}
+
+.daily-entry p{
+    padding: 12px 0;
+}
+
+.daily-entry-times p{
+    color: var(--dark-brown);
+    font-weight: 500;
+    font-size: 12px;
+    padding: 2px 0;
+}
+
+.daily-entry-day{
+    padding: 0!important;
+    margin: 0!important;
+    font-size: 9px!important;
+    font-family: 'Raleway', sans-serif!important;
+}
+
+.daily-entry-date{
+    font-size: 14px!important;
+}
+
+.daily-entry-temperature{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}

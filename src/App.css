@@ -1,38 +1,154 @@
-.App {
+/* WEATHER APP COLOR VARIABLES */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap');
+
+:root {
+  --bg-color: rgb(243, 243, 243);
+  --light-brown: rgba(238, 231, 223, 1);
+  --dark-brown: rgb(61, 18, 1);
+  --light-blue: rgba(171, 222, 215, .2);
+  --dark-blue: rgba(77, 133, 129, 1);
+}
+
+
+/* ELEMENT STYLING */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+h1, h2, h3, nav li {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+nav {
+  text-align: center;
+  width: 100vw;
+  position: fixed;
+  background-color: rgb(247, 247, 247);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.06), 0 3px 6px rgba(0,0,0,0.13);
+  padding: 0px 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 20px 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(109, 109, 109);
+  transition: .15s ease;
+}
+
+nav ul li a:hover {
+  color: rgb(14, 14, 14);
+}
+
+
+/* CUSTOM STYLES */
+
+.app-headline{
+  color: #efefef;
+  font-size:20px;
+  opacity: .35;
+  padding: 25px 20px;
+  font-style: italic;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cloudy-background:after{
+  content:'';
+  position: fixed;
+  background: url('library/images/overcast.jpg') no-repeat center center;
+  top:0px;
+  left: 0px;
+  width:100%;
+  height:100%;
+  opacity: .6;
+  z-index:-1;
+  animation: fadein 2s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.rainy-background:after{
+  content:'';
+  position: fixed;
+  background: url('library/images/rain.jpg') no-repeat center center;
+  top:0px;
+  left: 0px;
+  width:100%;
+  height:100%;
+  z-index:-1;
+  opacity: .6;
+  filter: brightness(50%);
+  animation: fadein 2s;
+}
+
+.partly-cloudy-background:after{
+  content:'';
+  position: fixed;
+  background: url('library/images/partly-cloudy.jpg') no-repeat center center;
+  top:0px;
+  left: 0px;
+  width:100%;
+  height:100%;
+  z-index:-1;
+  opacity: .6;
+  filter: brightness(100%);
+  animation: fadein 2s;
+}
+
+.snowy-background:after{
+  content:'';
+  position: fixed;
+  background: url('library/images/snow.jpg') no-repeat center center;
+  top:0px;
+  left: 0px;
+  width:100%;
+  height:100%;
+  z-index:-1;
+  opacity: .6;
+  filter: brightness(50%);
+  animation: fadein 2s;
+}
+
+.sunny-background:after{
+  content:'';
+  position: fixed;
+  background: url('library/images/sun.jpg') no-repeat center center;
+  top:0px;
+  left: 0px;
+  width:100%;
+  height:100%;
+  z-index:-1;
+  opacity: .6;
+  filter: brightness(100%);
+  animation: fadein 2s;
+}
+
+@keyframes fadein{
+  0%{
+    opacity: 0;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  15%{
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  100%{
+    opacity: .6;
   }
 }

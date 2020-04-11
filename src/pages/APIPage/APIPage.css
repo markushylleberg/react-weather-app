@@ -1,0 +1,48 @@
+.api-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 100px 0 40px 0;
+}
+
+.api-container{
+    width: 1200px;
+    height: auto;
+    background-color: white;
+    color: var(--dark-brown);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.09), 0 6px 6px rgba(0,0,0,0.03);
+    padding: 15px 20px;
+}
+
+.api-headlines{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.api-container h2{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: rgb(109, 109, 109);
+}
+
+.api-container h3{
+    padding: 3px 0px 0px 15px;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(14, 68, 134);
+}
+
+.api-container h4{
+    padding: 3px 0px 0px 0px;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(14, 68, 134);
+}

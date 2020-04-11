@@ -1,0 +1,67 @@
+.hourly-wrapper{
+    background-color: rgb(247, 247, 247);
+    padding: 20px 0px;
+}
+
+.hourly-wrapper h2{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: rgb(109, 109, 109);
+}
+
+.hourly-wrapper h3{
+    padding: 3px 0px 0px 15px;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(14, 68, 134);
+}
+
+.hourly-headlines{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.hourly-container{
+    display: flex;
+    overflow-x: scroll;
+    padding: 25px 0;
+}
+
+.hourly-entry{
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    height: auto;
+    margin: 15px 0;
+    min-width: 120px;
+    text-align: center;
+}
+
+.hourly-entry p{
+    padding: 12px 0;
+}
+
+.hourly-entry-time{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    padding: 0 0 12px 0!important;
+}
+
+.hourly-entry-icon{
+    padding: 13px 0;
+}
+
+.hourly-entry-day{
+    padding: 0!important;
+    margin: 0!important;
+    font-size: 9px;
+}
+
+.hourly-entry-temperature{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}

@@ -1,0 +1,22 @@
+.dashboard-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 100px 0 40px 0;
+}
+
+.dashboard-container{
+    width: 1200px;
+    height: auto;
+    background-color: white;
+    color: var(--dark-brown);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.09), 0 6px 6px rgba(0,0,0,0.03);
+}
+
+@media (max-width: 1200px) {
+    .dashboard-container{
+        width: 100vw;
+    }
+}
